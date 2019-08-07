@@ -138,7 +138,7 @@ function ListarEstudiantes(){
     var table = $("#tabla");
 
     tabla += '<table border="1" class="table col-lg-12 col-md-6">';
-    tabla += '<tr class="list-title col-lg-12"><h1 class="col-lg-12">Listado de Estudiante</h1></tr>';
+    tabla += '<tr class="col-lg-12"><h1 id="list-title">Listado de Estudiante</h1></tr>';
     tabla += '<tr class="panel-heading"><th>Codigo</th><th>Nombre</th><th>Nota</th><th colspan="2">Accion</th></tr>';
     
     for(var i=0; i<localStorage.length; i++){
