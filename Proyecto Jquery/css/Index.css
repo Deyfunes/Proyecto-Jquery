@@ -225,9 +225,15 @@ h3{
 }
 
 #list-title{
-	height: 30px;
+	width: 100%;
+	height: auto;
 	margin: 3px;
-	background: #354d4df3;
+	text-align: center;
+	border: 2px solid #dbbb18;
+	border-radius: 4px;
+	font: 3vw "Candara";
+	color: #dbbb18;
+	background: #406464c2;
 }
 
 .panel-title{
@@ -274,7 +280,7 @@ p{
 	background:-webkit-linear-gradient(top, hsla(39, 90%, 42%, 0.8) 20%, hsla(12, 2%, 60%, 0.5) 80%);
 	color: transparent;
 	-webkit-background-clip: text;
-	border: 2px solid rgb(80, 156, 80);	
+	margin-top: 20px;
 	text-align: center;
 }
  
