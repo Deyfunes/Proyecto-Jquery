@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<title>Registro de Estudiantes</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<!--<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">--><!--btsp 4-->
+	<link href="css/Index.css" rel="stylesheet" type="text/css">
+	<link href="css/font.css" rel="stylesheet" type="text/css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	
+
+	<script src="js/jquery-1.11.1.js"></script>
+	<script src="js/jquery.validate.js"></script>
+	<script src="js/validation.js"></script>
+	<script src="js/jquery.js"></script>
+</head>
+
+<body>
+	 
+
+<div class="container col-lg-12">
+		
+	<header class="encabezado col-lg-12 col-md-12 col-xs-12">
+
+		<div class="head col-lg-12 col-md-12 col-sm-12">
+
+		<img class="rounded-circle col-lg-2 col-md-2 col-sm-2" src="./icon/logo.svg" width="100px" height="100px" >	
+		<h1 class="title col-lg-6 col-md-10 col-sm-10 text-center">Registro de Estudiantes</h1>
+		
+		</div>
+
+	</header>
+
+	<section class="contenido col-lg-12 col-md-12 col-sm-12"> 
+
+		<div class="row col-lg-6 col-md-6 col-sm-12">
+
+		<form class="login-form col-lg-12 col-md-12" id="formulario" method="get" action="get">
+			
+			<fieldset class="col-lg-10">
+				
+			<label for="code" class="control-label col-lg-12 col-md-12 col-sm-12">Codigo</label>
+			<input type="number" class="form-control" for="code" name="code" id="code" placeholder="Codigo" required minlength="3" required maxlength="4" disabled><br>
+			<!--<div class="col-lg-6" id="note">!this field is required</div>-->
+			 
+			<label for="nom" class="control-label col-lg-12 col-md-12 col-sm-12">Nombre</label>
+			<input type="text" class="form-control" for="nom" name="nom" id="nom" placeholder="nombre" required minlength="3" required maxlength="12"><br>
+			<div class="col-lg-6" id="note2">!this field is required</div>
+
+			<label for="score" class="control-label col-lg-12 col-md-12 col-sm-12">Nota</label>
+			<input type="number" name="score" id="score" for="score" class="form-control" placeholder="nota" required minlength="2" required maxlength="3">
+			<div class="col-lg-6" id="note3">!this field is required</div>
+			
+
+		</fieldset>	
+			
+	</form>
+
+ 
+		<div class="buttons col-lg-10 align-items-center">
+			
+			<button id="registrar" class="logbtn">Registrarse</button>
+			<button id="high_score" class="logbtn">Nota Mayor</button>
+			<button id="low_score" class="logbtn">Nota Menor</button>
+			<button id="promedio" class="logbtn">Promedio</button>
+			
+		</div>
+
+		<div class="show_list col-lg-12 col-md-12"><button id="mostrarLista">Mostrar Lista</button></div>
+	</div>
+
+		<div class="list col-lg-6 col-md-6 col-sm-12">
+
+			<div class="Listado" id="tabla">
+					
+			</div> 
+			 	<div class="solutions col-lg-12 col-md-12 col-sm-12">
+					<ul id="resultados" class="col-lg-12 col-md-12 col-sm-12 list-group">
+
+							<li class="col-lg-6 list-group-item">Nota Mayor<span class="badge" id="res_notamayor"></span></li>
+							
+							<li class="col-lg-6 list-group-item">Nota menor<span class="badge" id="res_notamenor"></span></li>
+							
+							<li class="col-lg-6 list-group-item">Promedio<span class="badge" id="res_promedio"></span></li>
+							
+				
+					</ul>
+				</div>	
+		</div>
+		
+	</section>
+	
+	<footer class="col-lg-12 col-md-12 col-sm-12">
+
+		<div class="copy col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+			<div class="W-U>"><p class="col-lg-12 align-item-center">World-University &copy All rights Reserved</p></div>
+			<div class="icon col-lg-12"><a href="" class="github"><i class="fa fa-github"></i></a></div>
+			
+		</div>	
+
+	</footer>
+	
+	</div>
+	
+</body>
+
+</html>
